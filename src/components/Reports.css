@@ -1,0 +1,69 @@
+/* Reports Container */
+.reports-container {
+  padding: 20px; /* Padding around the container */
+  background-color: #ffffff; /* White background for the container */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 800px; /* Maximum width for the container */
+  margin: 20px auto; /* Center the container */
+}
+
+/* Heading Styles */
+.reports-container h2 {
+  text-align: center; /* Center the heading */
+  color: #333; /* Dark gray color for the heading */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Report Options Styles */
+.report-options {
+  display: flex; /* Flexbox for layout */
+  justify-content: space-around; /* Space between report cards */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Report Card Styles */
+.report-card {
+  background-color: #f9f9f9; /* Light gray background for report cards */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding inside the card */
+  text-align: center; /* Center text inside the card */
+  margin: 10px; /* Space around each card */
+  flex: 1 1 300px; /* Flex-grow, flex-shrink, and base width */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effects */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.report-card:hover {
+  transform: translateY(-5px); /* Lift the card on hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Report Card Heading Styles */
+.report-card h3 {
+  color: #007bff; /* Blue color for headings */
+  margin: 10px 0; /* Space above and below headings */
+}
+
+/* Report Card Description Styles */
+.report-card p {
+  color: #555; /* Gray color for descriptions */
+  margin-bottom: 15px; /* Space below descriptions */
+}
+
+/* Button Styles */
+.pdf-btn, .excel-btn {
+  padding: 10px 15px; /* Padding for buttons */
+  background-color: #007bff; /* Blue background for buttons */
+  color: white; /* White text for buttons */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Transition for background color */
+}
+
+.pdf-btn:hover, .excel-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}

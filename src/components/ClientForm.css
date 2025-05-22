@@ -1,0 +1,115 @@
+/* Client List Container */
+.client-list-container {
+  padding: 20px; /* Padding around the container */
+  background-color: white; /* White background for the container */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Header Styles */
+.list-header {
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Space between header elements */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 20px; /* Space below the header */
+}
+
+.list-header h2 {
+  margin: 0; /* Remove default margin */
+  color: #333; /* Dark gray color for the heading */
+}
+
+/* Actions Styles */
+.actions {
+  display: flex; /* Flexbox for layout */
+  align-items: center; /* Center items vertically */
+}
+
+.actions input {
+  padding: 10px; /* Padding for the search input */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  margin-right: 10px; /* Space between input and button */
+  font-size: 14px; /* Font size for input */
+  width: 200px; /* Fixed width for input */
+}
+
+.actions .add-btn {
+  padding: 10px 15px; /* Padding for the button */
+  background-color: #007bff; /* Blue background for the button */
+  color: white; /* White text for the button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold text */
+  transition: background-color 0.3s ease; /* Transition for background color */
+}
+
+.actions .add-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Table Styles */
+.client-table {
+  width: 100%; /* Full width for the table */
+  border-collapse: collapse; /* Collapse borders */
+  margin-top: 10px; /* Space above the table */
+}
+
+.client-table th,
+.client-table td {
+  padding: 12px; /* Padding for table cells */
+  border: 1px solid #ddd; /* Light gray border */
+  text-align: left; /* Left align text */
+}
+
+.client-table th {
+  background-color: #f4f4f4; /* Light gray background for header */
+  font-weight: bold; /* Bold text for header */
+}
+
+.client-table tr:nth-child(even) {
+  background-color: #f9f9f9; /* Zebra striping for even rows */
+}
+
+.client-table tr:hover {
+  background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+/* Action Buttons in Table */
+.actions .edit-btn {
+  padding: 5px 10px; /* Padding for edit button */
+  background-color: #28a745; /* Green background for edit button */
+  color: white; /* White text for edit button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  margin-right: 5px; /* Space between edit and delete buttons */
+  transition: background-color 0.3s ease; /* Transition for background color */
+}
+
+.actions .edit-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.delete-btn {
+  padding: 5px 10px; /* Padding for delete button */
+  background-color: #dc3545; /* Red background for delete button */
+  color: white; /* White text for delete button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Transition for background color */
+}
+
+.delete-btn:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+/* Error Message Styles */
+.error-message {
+  color: #d93025; /* Red color for error messages */
+  font-size: 14px; /* Font size for error messages */
+  margin: 20px 0; /* Space above and below error messages */
+  text-align: center; /* Center error messages */
+}

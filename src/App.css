@@ -1,38 +1,175 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif; /* Default font */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #f4f4f4; /* Light gray background */
+  color: #333; /* Dark text color */
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column; /* Stack children vertically */
+  min-height: 100vh; /* Full height of the viewport */
+}
+
+/* Loading Styles */
+.loading {
+  display: flex;
+  justify-content: center; /* Center loading text horizontally */
+  align-items: center; /* Center loading text vertically */
+  height: 100vh; /* Full height of the viewport */
+  font-size: 24px; /* Larger font size for loading text */
+  color: #007bff; /* Blue color for loading text */
+}
+
+/* Container Styles */
+.container {
+  flex: 1; /* Allow the container to grow and fill available space */
+  padding: 20px; /* Padding around the container */
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #007bff; /* Blue background for the navbar */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Padding for the navbar */
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center items vertically */
+}
+
+.navbar a {
+  color: white; /* White text for links */
+  text-decoration: none; /* Remove underline from links */
+  margin-left: 15px; /* Space between links */
+}
+
+.navbar a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Auth Form Styles */
+.auth-container {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
 }
 
-.App-link {
-  color: #61dafb;
+.auth-box {
+  background-color: white; /* White background for the form */
+  padding: 25px 30px; /* Padding around the content */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 320px; /* Fixed width for the form */
+  box-sizing: border-box; /* Include padding in width */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.auth-box h2 {
+  text-align: center; /* Centered heading */
+  margin-bottom: 25px; /* Space below the heading */
+  color: #333; /* Dark gray color for headings */
+}
+
+/* Form Group Styles */
+.form-group {
+  margin-bottom: 18px; /* Space between form groups */
+}
+
+.form-group label {
+  display: block; /* Block display for labels */
+  margin-bottom: 6px; /* Space below labels */
+  font-weight: bold; /* Bold text for labels */
+}
+
+/* Input and Select Styles */
+.form-group input,
+.form-group select {
+  width: 100%; /* Full width for inputs and selects */
+  padding: 10px 12px; /* Padding for inputs and selects */
+  border: 1.5px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 15px; /* Font size for inputs */
+  transition: border-color 0.3s ease; /* Transition for border color */
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none; /* Remove outline */
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Shadow on focus */
+}
+
+/* Error Message Styles */
+.error-message {
+  color: #d93025; /* Red color for error messages */
+  font-size: 14px; /* Font size for error messages */
+  margin-bottom: 18px; /* Space below error messages */
+  text-align: center; /* Center error messages */
+}
+
+/* Button Styles */
+.auth-btn {
+  width: 100%; /* Full width for buttons */
+  padding: 12px 0; /* Padding for buttons */
+  background-color: #007bff; /* Blue background for buttons */
+  color: white; /* White text for buttons */
+  font-size: 16px; /* Font size for buttons */
+  font-weight: bold; /* Bold text for buttons */
+  border: none; /* Remove border */
+  border-radius: 6px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Transition for background color */
+}
+
+.auth-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Footer Styles */
+.auth-footer {
+  margin-top: 20px; /* Space above footer */
+  text-align: center; /* Center footer text */
+  font-size: 14px; /* Font size for footer */
+  color: #555; /* Gray color for footer text */
+}
+
+.auth-footer a {
+  color: #007bff; /* Blue color for links */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Bold text for links */
+}
+
+.auth-footer a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Dashboard and Other Component Styles */
+.dashboard {
+  padding: 20px; /* Padding for dashboard */
+  background-color: white; /* White background for dashboard */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.client-list,
+.reports,
+.report-history {
+  padding: 20px; /* Padding for client list, reports, and report history */
+  background-color: white; /* White background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .auth-box {
+    width: 90%; /* Full width on smaller screens */
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar {
+    flex-direction: column; /* Stack navbar items vertically on small screens */
   }
 }
