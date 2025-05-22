@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "scripts": {
     "start": "react-scripts start"
   },
@@ -22,4 +23,15 @@
       "last 1 safari version"
     ]
   }
+=======
+  "name": "fouth",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+>>>>>>> 711a7c34178887862c302885073da082755a7208
 }
